@@ -26,9 +26,7 @@ CGFloat const HFDefaultAlertCornerRadius = 22;
 }
 
 - (void)showInVC:(UIViewController *)vc {
-    self.modalPresentationStyle = UIModalPresentationOverFullScreen;
-    [vc presentViewController:self animated:NO completion:nil];
-//    [vc hf_customPresentViewController:self gaussBlurStyle:UIBlurEffectStyleDark alpha:0.7 action:@selector(processCannel)];
+    [vc hf_customPresentViewController:self gaussBlurStyle:UIBlurEffectStyleDark alpha:0.7 action:@selector(processCannel)];
 }
 
 - (UIView *)bgView {

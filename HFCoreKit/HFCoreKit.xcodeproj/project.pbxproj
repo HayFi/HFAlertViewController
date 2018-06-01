@@ -31,6 +31,7 @@
 		0BA3CC0D20C119A8000F6DB0 /* NSString+HFExtra.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BA3CC0B20C119A8000F6DB0 /* NSString+HFExtra.m */; };
 		0BA3CC1020C119AE000F6DB0 /* UIViewController+HFExtra.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BA3CC0E20C119AE000F6DB0 /* UIViewController+HFExtra.m */; };
 		0BA3CC1120C119AE000F6DB0 /* UIViewController+HFExtra.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BA3CC0F20C119AE000F6DB0 /* UIViewController+HFExtra.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0BA3CC1320C11C88000F6DB0 /* NullSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BA3CC1220C11C88000F6DB0 /* NullSafe.m */; };
 		65282D4B1ED920D9008A30C8 /* FileHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 659AC8291ED8383D00C979D1 /* FileHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		656457E81F3303FB009B62AB /* UIView+HFExtra.h in Headers */ = {isa = PBXBuildFile; fileRef = 656457E61F3303FB009B62AB /* UIView+HFExtra.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		656457E91F3303FB009B62AB /* UIView+HFExtra.m in Sources */ = {isa = PBXBuildFile; fileRef = 656457E71F3303FB009B62AB /* UIView+HFExtra.m */; };
@@ -56,6 +57,7 @@
 		0BA3CC0B20C119A8000F6DB0 /* NSString+HFExtra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HFExtra.m"; sourceTree = "<group>"; };
 		0BA3CC0E20C119AE000F6DB0 /* UIViewController+HFExtra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HFExtra.m"; sourceTree = "<group>"; };
 		0BA3CC0F20C119AE000F6DB0 /* UIViewController+HFExtra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HFExtra.h"; sourceTree = "<group>"; };
+		0BA3CC1220C11C88000F6DB0 /* NullSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NullSafe.m; sourceTree = "<group>"; };
 		656457E61F3303FB009B62AB /* UIView+HFExtra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HFExtra.h"; sourceTree = "<group>"; };
 		656457E71F3303FB009B62AB /* UIView+HFExtra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HFExtra.m"; sourceTree = "<group>"; };
 		656457EA1F330409009B62AB /* UIColor+HFExtra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HFExtra.h"; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 		65CE9DA31F346AB30022FD6F /* Wapper */ = {
 			isa = PBXGroup;
 			children = (
+				0BA3CC1220C11C88000F6DB0 /* NullSafe.m */,
 				0BA3CBFF20C0F1F8000F6DB0 /* HFDeviceManager.h */,
 				0BA3CC0020C0F1F8000F6DB0 /* HFDeviceManager.m */,
 			);
@@ -290,6 +293,7 @@
 				0B0CEFFF205120A500EB83C0 /* HFAlertSheetViewController.m in Sources */,
 				0BA3CC0220C0F1F8000F6DB0 /* HFDeviceManager.m in Sources */,
 				656457E91F3303FB009B62AB /* UIView+HFExtra.m in Sources */,
+				0BA3CC1320C11C88000F6DB0 /* NullSafe.m in Sources */,
 				0B7EBFC32053C68800DB57B8 /* HFAlertViewController.m in Sources */,
 				0BA3CC1020C119AE000F6DB0 /* UIViewController+HFExtra.m in Sources */,
 			);
@@ -449,7 +453,7 @@
 				MACH_O_TYPE = staticlib;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "-Objc";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = huawen.HFCoreKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -494,7 +498,7 @@
 				MACH_O_TYPE = staticlib;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "-Objc";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = huawen.HFCoreKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

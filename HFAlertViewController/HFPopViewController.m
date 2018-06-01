@@ -2,7 +2,7 @@
 //  HFPopViewController.m
 //  HFAlertViewController
 //
-//  Created by HayFi on 2018/6/1.
+//  Created by netmon on 2018/6/1.
 //  Copyright © 2018年 HayFi. All rights reserved.
 //
 
@@ -28,7 +28,7 @@
     UILabel * label = [[UILabel alloc] initWithFrame:self.centerView.bounds];
     [self.centerView addSubview:label];
     label.text = @"thanks to use HFCoreKit";
-    label.textColor = [UIColor lightGrayColor];
+    label.textColor = [UIColor hfLineGrayColor];
     label.textAlignment = NSTextAlignmentCenter;
     WeakObj(self)
     self.submitBlock = ^(UIButton *sender) {
