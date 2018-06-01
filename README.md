@@ -1,4 +1,6 @@
-# HFAlertViewController
+# HFCoreKit
+
+支持iOS7及以上的项目，如果出现崩溃请other linker处添加-ObjC
 模仿系统的UIAlertController创建的自定义AlertView
 1、HFAlertViewController使用方法与系统的UIAlertController一样
 

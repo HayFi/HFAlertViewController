@@ -177,10 +177,7 @@ static NSString * const cellID = @"HFAlertViewActionCellCellID";
     CGFloat x = 18;
     CGFloat lbW = CGRectGetWidth(self.contentView.bounds) - x * 2;
     UIFont * titleFont = BOLD_SIZE(17);
-    CGFloat titleH = 0;// self.titleString.length > 0 ? [self.titleString sizeWithFont:titleFont maxSize:CGSizeMake(lbW, MAXFLOAT)].height : 0;
-    if (self.titleString.length > 0) {
-        titleH = [self.titleString sizeWithFont:titleFont maxSize:CGSizeMake(lbW, MAXFLOAT)].height;
-    }
+    CGFloat titleH = self.titleString.length > 0 ? [self.titleString sizeWithFont:titleFont maxSize:CGSizeMake(lbW, MAXFLOAT)].height : 0;
     UILabel * titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(x, HFAPadding2, lbW, titleH)];
     [self.contentView.contentView addSubview:titleLabel];
     titleLabel.font = titleFont;
