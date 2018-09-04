@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 47;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,19 +15,9 @@
 		0BA3CBE920C0EF00000F6DB0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BA3CBE820C0EF00000F6DB0 /* main.m */; };
 		0BA3CBFC20C0F1B9000F6DB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BA3CBFB20C0F1B9000F6DB0 /* Foundation.framework */; };
 		0BA3CBFE20C0F1C1000F6DB0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BA3CBFD20C0F1C1000F6DB0 /* UIKit.framework */; };
-		0BA3CC0720C0F7AA000F6DB0 /* HFPopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BA3CC0620C0F7AA000F6DB0 /* HFPopViewController.m */; };
-		0BA3CC0920C1195C000F6DB0 /* HFCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BA3CC0820C1195C000F6DB0 /* HFCoreKit.framework */; };
+		0BBFD4CD213E25B100EC8199 /* HFAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BBFD4C9213E25B100EC8199 /* HFAlertViewController.m */; };
+		0BBFD4CE213E25B100EC8199 /* UIButton+HFExtra.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BBFD4CB213E25B100EC8199 /* UIButton+HFExtra.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		0BA3CBF720C0EFAB000F6DB0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0BA3CBF220C0EFAA000F6DB0 /* HFCoreKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 659AC70E1ED8363F00C979D1;
-			remoteInfo = HFCoreKit;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0BA3CBD620C0EEFE000F6DB0 /* HFAlertViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HFAlertViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,13 +30,14 @@
 		0BA3CBE520C0EF00000F6DB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0BA3CBE720C0EF00000F6DB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0BA3CBE820C0EF00000F6DB0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		0BA3CBF220C0EFAA000F6DB0 /* HFCoreKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HFCoreKit.xcodeproj; path = HFCoreKit/HFCoreKit.xcodeproj; sourceTree = "<group>"; };
 		0BA3CBF920C0EFBF000F6DB0 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		0BA3CBFB20C0F1B9000F6DB0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0BA3CBFD20C0F1C1000F6DB0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		0BA3CC0520C0F7AA000F6DB0 /* HFPopViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HFPopViewController.h; sourceTree = "<group>"; };
-		0BA3CC0620C0F7AA000F6DB0 /* HFPopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HFPopViewController.m; sourceTree = "<group>"; };
-		0BA3CC0820C1195C000F6DB0 /* HFCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HFCoreKit.framework; path = "../Library/Developer/Xcode/DerivedData/HFAlertViewController-bcyuewgghzdtxxhasegenhxsbmbi/Build/Products/Debug-iphoneos/HFCoreKit.framework"; sourceTree = "<group>"; };
+		0BBFD4C9213E25B100EC8199 /* HFAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFAlertViewController.m; sourceTree = "<group>"; };
+		0BBFD4CA213E25B100EC8199 /* UIButton+HFExtra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+HFExtra.h"; sourceTree = "<group>"; };
+		0BBFD4CB213E25B100EC8199 /* UIButton+HFExtra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+HFExtra.m"; sourceTree = "<group>"; };
+		0BBFD4CC213E25B100EC8199 /* HFAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFAlertViewController.h; sourceTree = "<group>"; };
+		0BBFD4D0213E275800EC8199 /* FileHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +46,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BA3CBFE20C0F1C1000F6DB0 /* UIKit.framework in Frameworks */,
-				0BA3CC0920C1195C000F6DB0 /* HFCoreKit.framework in Frameworks */,
 				0BA3CBFC20C0F1B9000F6DB0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,7 +56,6 @@
 		0BA3CBCD20C0EEFE000F6DB0 = {
 			isa = PBXGroup;
 			children = (
-				0BA3CBF220C0EFAA000F6DB0 /* HFCoreKit.xcodeproj */,
 				0BA3CBD820C0EEFE000F6DB0 /* HFAlertViewController */,
 				0BA3CBD720C0EEFE000F6DB0 /* Products */,
 				0BA3CBFA20C0F1B8000F6DB0 /* Frameworks */,
@@ -84,12 +73,11 @@
 		0BA3CBD820C0EEFE000F6DB0 /* HFAlertViewController */ = {
 			isa = PBXGroup;
 			children = (
+				0BBFD4C6213E257900EC8199 /* HFAlertController */,
 				0BA3CBD920C0EEFE000F6DB0 /* AppDelegate.h */,
 				0BA3CBDA20C0EEFE000F6DB0 /* AppDelegate.m */,
 				0BA3CBDC20C0EEFE000F6DB0 /* ViewController.h */,
 				0BA3CBDD20C0EEFE000F6DB0 /* ViewController.m */,
-				0BA3CC0520C0F7AA000F6DB0 /* HFPopViewController.h */,
-				0BA3CC0620C0F7AA000F6DB0 /* HFPopViewController.m */,
 				0BA3CBF920C0EFBF000F6DB0 /* PrefixHeader.pch */,
 				0BA3CBDF20C0EEFE000F6DB0 /* Main.storyboard */,
 				0BA3CBE220C0EF00000F6DB0 /* Assets.xcassets */,
@@ -100,22 +88,25 @@
 			path = HFAlertViewController;
 			sourceTree = "<group>";
 		};
-		0BA3CBF320C0EFAA000F6DB0 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				0BA3CBF820C0EFAB000F6DB0 /* HFCoreKit.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		0BA3CBFA20C0F1B8000F6DB0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0BA3CC0820C1195C000F6DB0 /* HFCoreKit.framework */,
 				0BA3CBFD20C0F1C1000F6DB0 /* UIKit.framework */,
 				0BA3CBFB20C0F1B9000F6DB0 /* Foundation.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0BBFD4C6213E257900EC8199 /* HFAlertController */ = {
+			isa = PBXGroup;
+			children = (
+				0BBFD4D0213E275800EC8199 /* FileHeader.h */,
+				0BBFD4CC213E25B100EC8199 /* HFAlertViewController.h */,
+				0BBFD4C9213E25B100EC8199 /* HFAlertViewController.m */,
+				0BBFD4CA213E25B100EC8199 /* UIButton+HFExtra.h */,
+				0BBFD4CB213E25B100EC8199 /* UIButton+HFExtra.m */,
+			);
+			path = HFAlertController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,11 +140,13 @@
 				TargetAttributes = {
 					0BA3CBD520C0EEFE000F6DB0 = {
 						CreatedOnToolsVersion = 9.3;
+						DevelopmentTeam = N88S6L32PU;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
 			buildConfigurationList = 0BA3CBD120C0EEFE000F6DB0 /* Build configuration list for PBXProject "HFAlertViewController" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -163,28 +156,12 @@
 			mainGroup = 0BA3CBCD20C0EEFE000F6DB0;
 			productRefGroup = 0BA3CBD720C0EEFE000F6DB0 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 0BA3CBF320C0EFAA000F6DB0 /* Products */;
-					ProjectRef = 0BA3CBF220C0EFAA000F6DB0 /* HFCoreKit.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				0BA3CBD520C0EEFE000F6DB0 /* HFAlertViewController */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		0BA3CBF820C0EFAB000F6DB0 /* HFCoreKit.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = HFCoreKit.framework;
-			remoteRef = 0BA3CBF720C0EFAB000F6DB0 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		0BA3CBD420C0EEFE000F6DB0 /* Resources */ = {
@@ -204,7 +181,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BA3CC0720C0F7AA000F6DB0 /* HFPopViewController.m in Sources */,
+				0BBFD4CD213E25B100EC8199 /* HFAlertViewController.m in Sources */,
+				0BBFD4CE213E25B100EC8199 /* UIButton+HFExtra.m in Sources */,
 				0BA3CBDE20C0EEFE000F6DB0 /* ViewController.m in Sources */,
 				0BA3CBE920C0EF00000F6DB0 /* main.m in Sources */,
 				0BA3CBDB20C0EEFE000F6DB0 /* AppDelegate.m in Sources */,
@@ -349,17 +327,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N88S6L32PU;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/HFCoreKit/Products",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREFIX_HEADER = HFAlertViewController/PrefixHeader.pch;
 				INFOPLIST_FILE = HFAlertViewController/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = HayFi.HFAlertViewController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -373,17 +345,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N88S6L32PU;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/HFCoreKit/Products",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREFIX_HEADER = HFAlertViewController/PrefixHeader.pch;
 				INFOPLIST_FILE = HFAlertViewController/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = HayFi.HFAlertViewController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
