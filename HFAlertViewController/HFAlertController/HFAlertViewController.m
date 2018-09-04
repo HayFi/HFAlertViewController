@@ -84,22 +84,6 @@
 
 @implementation HFAlertControllerView
 
-- (instancetype)initWithFrame:(CGRect)frame {
-    self = [super initWithFrame:frame];
-    if (self) {
-        [self initUI];
-    }
-    return self;
-}
-
-- (void)initUI {
-    UIVisualEffectView * bg = [[UIVisualEffectView alloc] initWithEffect:[UIBlurEffect effectWithStyle:UIBlurEffectStyleDark]];
-    bg.frame = self.bounds;
-    bg.tag = bgViewTag;
-    bg.alpha = 0.8;
-    [self addSubview:bg];
-}
-
 - (void)didAddSubview:(UIView *)subview {
     NSLog(@"didAddSubview:%@,%s",subview, __func__);
     if (subview) {
@@ -130,6 +114,7 @@ static NSString * const cellID = @"HFAlertViewActionCellCellID";
 }
 
 @property(nonatomic, strong) UIVisualEffectView * contentView;
+@property(nonatomic, strong) UIVisualEffectView * cover;
 @property(nonatomic, copy) NSString * titleString;
 @property(nonatomic, copy) NSString * message;
 @property (nonatomic, nullable, readwrite) NSArray<HFAlertViewAction *> * actions;
@@ -237,8 +222,17 @@ static NSString * const cellID = @"HFAlertViewActionCellCellID";
     self.view = view;
     view.delegate = self;
     
+    UIVisualEffectView * bg = [[UIVisualEffectView alloc] initWithEffect:[UIBlurEffect effectWithStyle:UIBlurEffectStyleDark]];
+    bg.frame = self.view.bounds;
+    bg.tag = bgViewTag;
+    bg.alpha = 0.8;
+    [view addSubview:bg];
+    [view sendSubviewToBack:bg];
+    
     UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(processCannel)];
-    [view addGestureRecognizer:tap];
+    [bg addGestureRecognizer:tap];
+    
+    self.cover = bg;
     
     [self.view addSubview:self.contentView];
     CGFloat x = 18;
@@ -403,7 +397,9 @@ static NSString * const cellID = @"HFAlertViewActionCellCellID";
 
 - (void)viewWillLayoutSubviews {
     [super viewWillLayoutSubviews];
+    self.cover.frame = self.view.bounds;
     self.contentView.center = self.view.center;
+    
 }
 
 - (void)didReceiveMemoryWarning {
