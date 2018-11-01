@@ -1,4 +1,5 @@
 # HFAlertViewController
+支持直接用alert.view去添加自定义子视图，添加的视图会显示在title、message下排
 
             NSMutableArray * array = [NSMutableArray array];
             HFAlertViewAction * sure = [HFAlertViewAction actionWithTitle:@"确定" style:HFAlertViewActionStyleDefault handler:^(HFAlertViewAction * _Nonnull action) {
@@ -33,4 +34,4 @@
             alert.canNotRemoveToTouchEmpty = YES;//默认为NO,当为YES时，点击空白处alert不会消失
             [alert showInVC:self];
             
-支持直接用alert.view去添加自定义子视图，添加的视图会显示在title、message下排
+
