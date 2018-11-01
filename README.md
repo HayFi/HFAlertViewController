@@ -1,6 +1,6 @@
 # HFAlertViewController
 
-NSMutableArray * array = [NSMutableArray array];
+            NSMutableArray * array = [NSMutableArray array];
             HFAlertViewAction * sure = [HFAlertViewAction actionWithTitle:@"确定" style:HFAlertViewActionStyleDefault handler:^(HFAlertViewAction * _Nonnull action) {
                 //do something...
             }];
