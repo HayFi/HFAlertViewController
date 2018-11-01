@@ -10,6 +10,3 @@ HFAlertViewController模仿系统的UIAlertController的接口创建的自定义
 } cannelBlock:^{
 
 }];
-
-
-2、HFAlertSheetViewController是我写的一个基类，可以继承于这个基类重写 - (void)hfAlertSheetCenterViewDidLoad;即可，具体可以参考demo的用法

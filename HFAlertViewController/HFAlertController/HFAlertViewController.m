@@ -364,16 +364,20 @@ static NSString * const cellID = @"HFAlertViewActionCellCellID";
 }
 
 - (void)selfRelease:(HFAlertCannelBlock)cannel {
-    if (self.contentView) {
-        [self.contentView.layer removeAllAnimations];
-        [self.contentView removeFromSuperview];
-        self.contentView = nil;
+    if (_contentView) {
+        [_contentView.layer removeAllAnimations];
+        [_contentView removeFromSuperview];
+        _contentView = nil;
     }
-    [self dismissViewControllerAnimated:NO completion:^{
-        if (cannel) {
-            cannel();
-        }
-    }];
+    if (cannel) {
+        [self dismissViewControllerAnimated:NO completion:^{
+            if (cannel) {
+                cannel();
+            }
+        }];
+    } else {
+        [self dismissViewControllerAnimated:NO completion:nil];
+    }
 }
 
 - (void)hfAlertWillAppearAnimationDuration {
